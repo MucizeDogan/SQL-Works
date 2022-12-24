@@ -1,4 +1,4 @@
--- Yýllara ve aylara göre istatistikler
+-- Yillara ve aylara gore istatistikler
 
 SELECT
 DATEPART(YEAR,O.DATE_) YIL,
