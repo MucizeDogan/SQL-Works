@@ -1,4 +1,4 @@
---Ortalama teslimat süresi 28 saatten çok olanlarý tespit etme
+--Ortalama teslimat suresi 28 saatten Ã§ok olanlari tespit etme
 
 SELECT U.ID, U.NAMESURNAME AS ADSOYAD,
 
