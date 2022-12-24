@@ -1,3 +1,3 @@
 # SQL-Works
-MsSQL ile yazdığım sorguları içerir.
-ETRADE DB'leri için sorgular içerir
+MsSQL ile yazdigimm sorguları icerir.
+ETRADE DB'leri icin sorgular icerir
