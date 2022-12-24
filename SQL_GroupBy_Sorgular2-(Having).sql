@@ -1,13 +1,13 @@
 
---	Kategorilere ayýrarak satýþ rakamlarýný getirme
+--	Kategorilere ayirarak satis rakamlarÄ±nÄ± getirme
 SELECT CATEGORY1,CATEGORY2,CATEGORY3,CATEGORY4,SUM(TOTALPRICE) FROM SALES 
 GROUP BY CATEGORY1,CATEGORY2,CATEGORY3,CATEGORY4 ORDER BY SUM(TOTALPRICE) DESC
 
---Maðazalarýn müþteri sayýlarýný getirme(tekil müþteri);
+--Magazalarin musteri sayilarini getirme(tekil mÃ¼ÅŸteri);
 SELECT CITY, COUNT(DISTINCT CUSTOMERCODE) AS SINGLECUSTOMERS FROM SALES 
 GROUP BY CITY ORDER BY COUNT(DISTINCT CUSTOMERCODE) DESC
 
--- 40.000 tl Cironun üzerinde satýþ yapan maðazalarý getiren sorgu;
+-- 40.000 tl Cironun Ã¼zerinde satÄ±ÅŸ yapan maÄŸazalarÄ± getiren sorgu;
 SELECT CITY ,SUM(TOTALPRICE) AS TOTALPRICEE FROM SALES  
 GROUP BY CITY HAVING SUM(TOTALPRICE)>40000 ORDER BY SUM(TOTALPRICE) DESC
 
